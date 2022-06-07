@@ -1,0 +1,68 @@
+<html>
+
+<title>Ahmed Sayed CURD System</title>
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/mine.css">
+
+</head>
+
+<body>
+
+  <div class="w-75 mx-auto shadow-lg p-5 m-5">
+    <h1>CRUD SYSTEM</h1>
+
+    <label class="pb-1">productName:</label>
+    <input class="form-control mb-2" id="productName">
+
+
+    <label class="pb-1">ProductCategory:</label>
+    <input class="form-control mb-2" id="ProductCategory">
+
+
+    <label class="pb-1">ProductPrice:</label>
+    <input class="form-control mb-2" id="ProductPrice">
+
+
+    <label class="pb-1">ProductDescription:</label>
+    <textarea id="ProductDescription" class="form-control mb-2"></textarea>
+
+
+
+    <button onclick=" createProduct(); " id="addBtn" class="btn btn-primary mt-3">Add Product</button>
+    <button onclick="clearData();"  id="clearBtn" class="btn btn-primary mt-3">Clear</button>
+    <button  id="updateBtn" class="btn d-none btn-warning mt-3">Update</button>
+    <button  id="cancelBtn" class="btn d-none btn-danger mt-3">Cancel</button>
+  </div>
+
+
+
+  <input id="searchInput" type="text" placeholder="search....." class="form-control w-50 mx-auto">
+
+
+  <table class="table w-75 mx-auto mt-3">
+    <thead>
+
+      <th>index</th>
+      <th>name</th>
+      <th>category</th>
+      <th>price</th>
+      <th>description</th>
+      <th>update</th>
+      <th>delete</th>
+
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+  </table>
+
+
+
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
